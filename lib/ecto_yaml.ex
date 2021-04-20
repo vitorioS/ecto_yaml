@@ -19,6 +19,8 @@ defmodule EctoYaml do
 
   def dump(_), do: :error
 
+  def equal?(term1, term2), do: term1 == term2
+
   defp parse_yaml(string) do
     case YamlElixir.read_from_string(string) do
       {:ok, yaml} -> {:ok, yaml}
