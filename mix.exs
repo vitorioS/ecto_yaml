@@ -22,11 +22,11 @@ defmodule EctoYaml.Mixfile do
 
   defp deps do
     [
-      {:ecto, "~> 3.6.1"},
+      {:ecto, "~> 2.0 or ~> 3.0"},
       {:yaml_elixir, "~> 2.0"},
       {:poison, "~> 2.0 or ~> 3.0"},
       {:myxql, ">= 0.0.0", only: :test},
-      {:ecto_sql, "~> 3.6.1", only: :test}
+      {:ecto_sql, "~> 3.0", only: :test}
     ]
   end
 end
