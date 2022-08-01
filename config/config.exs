@@ -1,4 +1,4 @@
-use Mix.Config
+import Config
 
 config :ecto_yaml, EctoYaml.TestRepo,
   adapter: Ecto.Adapters.MyXQL,
