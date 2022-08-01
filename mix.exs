@@ -14,7 +14,7 @@ defmodule EctoYaml.Mixfile do
   end
 
   def application do
-    [applications: [:logger, :yaml_elixir]]
+    [extra_applications: [:logger]]
   end
 
   defp elixirc_paths(:test), do: ["lib", "test/support"]
